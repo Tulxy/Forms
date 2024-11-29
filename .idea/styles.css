@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            to right,
+            #00ffda,
+            #ec00ff,
+            #ffae00
+    );
+    background-size: 300% 300%;
+    animation: gradientShift 5s infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%; /
+    }
+}
+
+.obal {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    width: 400px;
+    margin: 35px auto;
+    margin-right: 280px;
+    padding: 14px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-left: -130px;
+}
+
+h3 {
+    color: #8a8a8a;
+    font-weight: 100;
+    margin-left: -45px;
+}
+
+.name input, .email input, .password input, .confirm-password input, .age input {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.signUp {
+    width: 300px;
+    height: 50px;
+    font-family: Arial;
+    color: #ffffff;
+    background: #006eff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.signUp:hover {
+    background: #005bff;
+    transition: 0.2s;
+    transform: scale(105%);
+}
+
+.name, .email, .password, .confirm-password, .age {
+    font-family: Arial;
+    color: #7c7c7c;
+    font-weight: 300;
+    text-align: center;
+    padding: 8px;
+}
+
+.checkbox {
+    font-family: arial;
+    margin-left: 0;
+}
+
+.circle {
+    width: 1000px;
+    height: 1000px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 5px solid rgba(177, 177, 177, 0.2);
+    margin-left: -300px;
+    margin-right: 100px;
+    background: #ffffff;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.mainH1 {
+    color: #000000;
+    font-size: 132px;
+    margin-top: 0;
+    margin-left: -750px;
+    font-family: "Bebas Neue", serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 5px 5px 8px #434343;
+}
+
+.mainP {
+    color: #6a6a6a;
+    font-size: 28px;
+    margin-top: 190px;
+    margin-left: -560px;
+    font-family: "Bebas Neue", serif;
+    font-weight: bold;
+}

@@ -5,9 +5,87 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Forms</title>
 </head>
 <body>
 
+<div class="circle"></div>
+<h1 class="mainH1">Registration</h1>
+<p class="mainP">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>
+    Nullam rhoncus aliquam metus. <br>
+    Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam.</p>
+
+<div class="obal">
+    <form action="#" method="post">
+
+        <h1 style="font-family: Arial; text-align: center">Get started</h1>
+        <h3 style="font-family: Arial; text-align: center">Create your new account now</h3>
+
+        <div class="name">
+            <label for="full_name" style="margin-right: 210px">Full name</label><br>
+            <input type="text" id="full_name" name="full_name" placeholder="Full name" maxlength="50" required>
+        </div>
+
+        <br>
+
+        <div class="email">
+            <label for="email" style="margin-right: 245px">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email address" required>
+        </div>
+
+        <br>
+
+        <div class="password">
+            <label for="password" style="margin-right: 210px">Password</label><br>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+
+        <br>
+
+        <div class="confirm-password">
+            <label for="confirm-password" style="margin-right: 160px">Opakování hesla:</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required  oninput="this.setCustomValidity(this.value !== document.getElementById('password').value ? 'Passwords must match.' : '')"w>
+        </div>
+
+        <br>
+
+        <div class="age">
+            <label for="age" style="display: block; text-align: left; margin-left: 50px">Věk:</label>
+            <input type="number" id="age" name="age" placeholder="0-125" max="125" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label style="font-family: Arial" for="favorite-day">Oblíbený den:</label>
+            <select id="favorite-day" name="favorite-day" required>
+                <optgroup label="Všední dny">
+                    <option value="Pondělí">Pondělí</option>
+                    <option value="Úterý">Úterý</option>
+                    <option value="Středa">Středa</option>
+                    <option value="Čtvrtek">Čtvrtek</option>
+                    <option value="Pátek">Pátek</option>
+                </optgroup>
+                <optgroup label="Víkend">
+                    <option value="Sobota">Sobota</option>
+                    <option value="Neděle">Neděle</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Souhlasím s podmínkami</label>
+        </div>
+
+        <button class="signUp" type="submit">Sign Up</button>
+    </form>
+</div>
 </body>
 </html>
